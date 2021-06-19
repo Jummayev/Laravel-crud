@@ -1,4 +1,4 @@
-git clone https://github.com/Jummayev/Laravel-curd.git
+git clone https://github.com/Jummayev/Laravel-crud.git
 
 
 composer install
