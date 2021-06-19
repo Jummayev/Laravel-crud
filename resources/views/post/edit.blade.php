@@ -28,7 +28,7 @@
     </div>
     <div class="card-body">
         <div class="container mt-5">
-            <h1>Create post</h1>
+            <h1>Update post</h1>
 
             @if ($errors->any())
                 <div class="alert alert-danger">
@@ -50,10 +50,11 @@
                 </div>
                 <div class="mb-3">
                     <label for="content" class="form-label">Content:</label>
-                    <textarea name="content" class="form-control" id="content" rows="3"
-                              placeholder="Content">{{ old('content', $post->content) }}</textarea>
+                    <textarea name="content" class="form-control" style="width: 100%; height: 200px" id="content" rows="3" placeholder="Content">
+                        {{ old('content', $post->content) }}
+                    </textarea>
                 </div>
-                <input type="submit" value="Add post" class="btn btn-success">
+                <input type="submit" value="Update" class="btn btn-success">
             </form>
         </div>
     </div>
